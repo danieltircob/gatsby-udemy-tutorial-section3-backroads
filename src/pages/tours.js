@@ -1,17 +1,20 @@
 import React, { Component } from "react";
 import Layout from "../components/Layout";
-import Button from "../../examples/Button.js";
+import Button from "../examples/Button.js";
+import { userStaticQuery, qraphql } from "gatsby";
 
 export default class tours extends Component {
   render() {
     return (
-      <Layout>
-        hello from tours page!!!!!
-        <div>
-          <Button big>First Button</Button>
-          <Button color="red">Second Button</Button>
-        </div>
-      </Layout>
+      <>
+        <Layout>
+          hello from tours page!!!!!
+          <div>
+            <Button big>First Button</Button>
+            <Button color="red">Second Button</Button>
+          </div>
+        </Layout>
+      </>
     );
   }
 }
